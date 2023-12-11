@@ -15,7 +15,7 @@ const initialState = {
   }
 }
 
-console.log("TEST")
+//console.log("TEST")
 export const resturantSlice = createSlice({
   name: 'resturant',
   initialState,

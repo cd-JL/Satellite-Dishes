@@ -6,13 +6,16 @@ import { getFeaturedResturantById } from '../api'
 import * as Icon from "react-native-feather";
 import { themeColors } from '../theme'
 
-export default function FeatureRow({ id, title, description }) {
+export default function FeatureRow({ id, title, description}) {
   const [resturants, setResturants] = useState([]);
 
   useEffect(() => {
     getFeaturedResturantById(id).then(data => {
       console.log('got data: ', data);
-      setResturants(data?.resturants);
+      console.log('got data 2323: ', data.restaurants.imgUrl);
+      console.log(data.restaurants);
+      setResturants(data.restaurants);
+      console.log(resturants);
     });
   }, [id]);
 
