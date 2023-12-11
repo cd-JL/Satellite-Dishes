@@ -22,7 +22,7 @@ export default function ResturantCard({
     lat
 }) {
   console.log("BIG AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-  //console.log(urlFor(imgUrl).url());
+  console.log(urlFor(imgUrl).url());
   const navigation = useNavigation();
   return (
     <TouchableWithoutFeedback onPress={()=>{

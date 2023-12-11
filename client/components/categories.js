@@ -10,7 +10,7 @@ export default function Categories() {
   const [categories, setCategories] = useState([])
   useEffect(() => {
     getCategories().then(data=>{
-      console.log('got data', data);
+      //console.log('got data', data);
       
       setCategories(data);
     })
